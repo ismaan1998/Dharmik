@@ -1,4 +1,5 @@
 import 'package:dharmik/ListPage.dart';
+import 'package:dharmik/constants.dart';
 import 'package:flutter/material.dart';
 import 'data.dart';
 
@@ -7,22 +8,31 @@ void main() {
 }
 
 class HomePage extends StatelessWidget {
-
-
-  List<ListTile> getContent(BuildContext context) {
-    List<ListTile> list = List<ListTile>();
+  List<Container> getContent(BuildContext context) {
+    List<Container> list = List<Container>();
 
     categories.keys.forEach((element) {
-      list.add(ListTile(
-        title: Text(element),
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => ListPage(categories[element])),
-          );
-        },
-      ));
+      list.add(
+        Container(
+          child: Column(
+            children: <Widget>[
+              ListTile(
+                title: Text(element, style: TextStyle(fontSize: font_size),),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ListPage(categories[element]),),
+                  );
+                },
+              ),
+              Divider(
+                color: Colors.blueGrey,
+              ),
+            ],
+          ),
+        ),
+      );
     });
 
     return list;

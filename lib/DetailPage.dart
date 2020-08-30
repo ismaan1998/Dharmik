@@ -1,3 +1,4 @@
+import 'package:dharmik/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'data.dart' as chalisa;
@@ -21,7 +22,7 @@ class DetailPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(content,textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20),),
+              style: TextStyle(fontSize: font_size,)),
             ],
           ),
         ),
