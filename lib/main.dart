@@ -1,3 +1,4 @@
+import 'package:dharmik/AppBar.dart';
 import 'package:dharmik/ListPage.dart';
 import 'package:dharmik/constants.dart';
 import 'package:flutter/material.dart';
@@ -41,6 +42,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: getAppBar("धार्मिक"),
       body: ListView(
         children: getContent(context),
       ),

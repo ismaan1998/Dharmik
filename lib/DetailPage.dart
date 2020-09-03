@@ -1,3 +1,4 @@
+import 'package:dharmik/AppBar.dart';
 import 'package:dharmik/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -15,6 +16,7 @@ class DetailPage extends StatelessWidget {
 //    print(loadAsset());
     return SafeArea(
       child: Scaffold(
+        appBar: getAppBar("धार्मिक"),
         body:Container(
           width: double.infinity,
         child: SingleChildScrollView(
