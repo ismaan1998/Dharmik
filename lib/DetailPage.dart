@@ -1,4 +1,5 @@
 import 'package:dharmik/AppBar.dart';
+import 'package:dharmik/background.dart';
 import 'package:dharmik/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -8,15 +9,18 @@ import 'data.dart' as chalisa;
 class DetailPage extends StatelessWidget {
 
   final String content;
-  DetailPage(this.content);
+  final String title;
+  DetailPage(this.content, this.title);
 
 
   @override
   Widget build(BuildContext context) {
 //    print(loadAsset());
-    return SafeArea(
+    return Container(
+      decoration: getBackground(),
       child: Scaffold(
-        appBar: getAppBar("धार्मिक"),
+        backgroundColor: Colors.transparent,
+        appBar: getAppBar(title),
         body:Container(
           width: double.infinity,
         child: SingleChildScrollView(

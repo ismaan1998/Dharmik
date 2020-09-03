@@ -1,12 +1,13 @@
 import 'package:dharmik/AppBar.dart';
 import 'package:dharmik/DetailPage.dart';
+import 'package:dharmik/background.dart';
 import 'package:dharmik/constants.dart';
 import 'package:flutter/material.dart';
 
 class ListPage extends StatelessWidget {
   final Map content;
-
-  ListPage(this.content);
+  final String title;
+  ListPage(this.content, this.title);
 
 
   List<Container> getContent(BuildContext context) {
@@ -22,7 +23,7 @@ class ListPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => DetailPage(content[element])),
+                      builder: (context) => DetailPage(content[element], element)),
                 );
               },
             ),
@@ -37,10 +38,14 @@ class ListPage extends StatelessWidget {
 
     @override
     Widget build(BuildContext context) {
-      return Scaffold(
-        appBar: getAppBar("धार्मिक"),
-        body: ListView(
-            children: getContent(context)
+      return Container(
+        decoration: getBackground(),
+        child: Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: getAppBar(title),
+          body: ListView(
+              children: getContent(context)
+          ),
         ),
       );
     }

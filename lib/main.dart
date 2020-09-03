@@ -1,5 +1,6 @@
 import 'package:dharmik/AppBar.dart';
 import 'package:dharmik/ListPage.dart';
+import 'package:dharmik/background.dart';
 import 'package:dharmik/constants.dart';
 import 'package:flutter/material.dart';
 import 'data.dart';
@@ -18,12 +19,17 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               ListTile(
-                title: Text(element, style: TextStyle(fontSize: font_size),),
+                title: Text(
+                  element,
+                  style: TextStyle(fontSize: font_size),
+                ),
                 onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => ListPage(categories[element]),),
+                      builder: (context) =>
+                          ListPage(categories[element], element),
+                    ),
                   );
                 },
               ),
@@ -41,10 +47,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: getAppBar("धार्मिक"),
-      body: ListView(
-        children: getContent(context),
+    return Container(
+      decoration: getBackground(),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: getAppBar("धार्मिक"),
+        body: ListView(
+          children: getContent(context),
+        ),
       ),
     );
   }
