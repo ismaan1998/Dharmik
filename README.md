@@ -1,16 +1,9 @@
 # dharmik
 
-Dharmik will provide you every book, mantras related to Hindu Dharma 
+Dharmik will provide you all necessary Aartis, Chalisa, mantras, Katha related to Hindu Dharma. 
 
-## Getting Started
+## To Download - <a href="https://github.com/ismaan1998/Dharmik/blob/master/app.apk">Click here</a>
+<br>
+##Demo -<br> 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="video.gif" width=500, height=1024> 
