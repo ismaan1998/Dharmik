@@ -6,9 +6,9 @@ Dharmik will provide you all necessary Aartis, Chalisa, mantras, Katha related t
 
 ##Screenshots -
 
-<img src="screenshot1.PNG"  width=500, height=1024>
-<img src="screenshot2.PNG"  width=500, height=1024>
-<img src="screenshot3.PNG"  width=500, height=1024>
+<img src="screenshot1.PNG"  width=250, height=512>
+<img src="screenshot2.PNG"  width=250, height=512>
+<img src="screenshot3.PNG"  width=250, height=512>
 
 ##Demo gif -
 
