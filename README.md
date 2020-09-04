@@ -11,6 +11,6 @@ Dharmik will provide you all necessary Aartis, Chalisa, mantras, Katha related t
 <img src="screenshot3.PNG"  width=250, height=512, style="display:inline-block;">
 </div>
 
-##Demo gif -
+<h2>Demo </h2>-
 
 <img src="video.gif" width=250, height=512> 
