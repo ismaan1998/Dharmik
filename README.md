@@ -14,3 +14,8 @@ Dharmik will provide you all necessary Aartis, Chalisa, mantras, Katha related t
 <h2>Demo </h2>-
 
 <img src="Screenshots/video.gif" width=250, height=512> 
+
+
+
+<h2> Contributors </h2> -
+<a href="https://www.facebook.com/imankit1998">Ankit Sharma</a>
