@@ -4,7 +4,7 @@ Dharmik will provide you all necessary Aartis, Chalisa, mantras, Katha related t
 
 ## To Download - <a href="https://github.com/ismaan1998/Dharmik/blob/master/app.apk">Click here</a>
 
-##Screenshots -
+##Screenshots -<br>
 <img src="screenshot1.PNG"  width=250, height=512, style="display:inline-block;">
 <img src="screenshot2.PNG"  width=250, height=512, style="display:inline-block;">
 <img src="screenshot3.PNG"  width=250, height=512, style="display:inline-block;">
