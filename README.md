@@ -6,11 +6,11 @@ Dharmik will provide you all necessary Aartis, Chalisa, mantras, Katha related t
 
 <h2> Screenshots -</h2><br>
 <div>
-<img src="screenshot1.PNG"  width=250, height=512, style="display:inline-block;">
-<img src="screenshot2.PNG"  width=250, height=512, style="display:inline-block;">
-<img src="screenshot3.PNG"  width=250, height=512, style="display:inline-block;">
+<img src="Screenshots/screenshot1.PNG"  width=250, height=512, style="display:inline-block;">
+<img src="Screenshots/screenshot2.PNG"  width=250, height=512, style="display:inline-block;">
+<img src="Screenshots/screenshot3.PNG"  width=250, height=512, style="display:inline-block;">
 </div>
 
 <h2>Demo </h2>-
 
-<img src="video.gif" width=250, height=512> 
+<img src="Screenshots/video.gif" width=250, height=512> 
