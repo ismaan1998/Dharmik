@@ -2,7 +2,7 @@
 
 Dharmik will provide you all necessary Aartis, Chalisa, mantras, Katha related to Hindu Dharma. 
 
-## To Download - <a href="https://github.com/ismaan1998/Dharmik/raw/master/app.apk">Click here</a>
+## To Download - <a href="https://github.com/ismaan1998/Dharmik/raw/master/app-release.apk">Click here</a>
 
 <h2> Screenshots -</h2><br>
 <div>
