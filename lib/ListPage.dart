@@ -1,29 +1,33 @@
 import 'package:dharmik/AppBar.dart';
 import 'package:dharmik/DetailPage.dart';
 import 'package:dharmik/background.dart';
-import 'package:dharmik/constants.dart';
+import 'package:dharmik/variables.dart';
 import 'package:flutter/material.dart';
 
-class ListPage extends StatelessWidget {
+class ListPage extends StatefulWidget {
   final Map content;
   final String title;
   ListPage(this.content, this.title);
 
+  @override
+  _ListPageState createState() => _ListPageState();
+}
 
+class _ListPageState extends State<ListPage> {
   List<Container> getContent(BuildContext context) {
     List<Container> list = List<Container>();
 
-    content.keys.forEach((element) {
+    widget.content.keys.forEach((element) {
       list.add(Container(
         child: Column(
           children: <Widget>[
             ListTile(
-              title: Text(element, style: TextStyle(fontSize: font_size),),
+              title: Text(element, style: TextStyle(fontSize: fontSize),),
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => DetailPage(content[element], element)),
+                      builder: (context) => DetailPage(widget.content[element], element)),
                 );
               },
             ),
@@ -42,14 +46,13 @@ class ListPage extends StatelessWidget {
         decoration: getBackground(),
         child: Scaffold(
           backgroundColor: Colors.transparent,
-          appBar: getAppBar(title),
+          appBar: getAppBar(widget.title),
           body: ListView(
               children: getContent(context)
           ),
         ),
       );
     }
-
 }
 
 

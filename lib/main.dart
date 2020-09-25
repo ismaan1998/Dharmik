@@ -1,7 +1,7 @@
 import 'package:dharmik/AppBar.dart';
 import 'package:dharmik/ListPage.dart';
 import 'package:dharmik/background.dart';
-import 'package:dharmik/constants.dart';
+import 'package:dharmik/variables.dart';
 import 'package:flutter/material.dart';
 import 'data.dart';
 
@@ -9,7 +9,12 @@ void main() {
   runApp(MaterialApp(home: HomePage()));
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   List<Container> getContent(BuildContext context) {
     List<Container> list = List<Container>();
 
@@ -21,7 +26,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   element,
-                  style: TextStyle(fontSize: font_size),
+                  style: TextStyle(fontSize: fontSize),
                 ),
                 onTap: () {
                   Navigator.push(
